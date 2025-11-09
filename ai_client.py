@@ -71,38 +71,7 @@ class ClashRoyaleAI:
         """
         Create the prompt for analyzing Clash Royale game state
         """
-        prompt = """You are an expert Clash Royale AI assistant. Analyze this game screenshot and recommend the optimal play.
-
-**What to analyze:**
-1. **Elixir count** - How much elixir is available?
-2. **Cards in hand** - What cards are available to play?
-3. **Enemy troops** - What troops/buildings are on the arena?
-4. **Tower status** - King tower and princess tower health
-5. **Arena positioning** - Where are troops located?
-6. **Optimal strategy** - Should we attack, defend, or wait?
-
-**Response format (JSON):**
-```json
-{
-    "elixir": <current elixir count>,
-    "cards_in_hand": ["card1", "card2", "card3", "card4"],
-    "recommended_card": "<card to play>",
-    "placement": "<where to place it (e.g., 'left bridge', 'center', 'behind king tower')>",
-    "reasoning": "<why this move is optimal>",
-    "game_state": "<brief description of current situation>",
-    "strategy": "<attack/defend/wait>",
-    "confidence": <0-100>
-}
-```
-
-**Important:**
-- If elixir is low, recommend waiting
-- Consider elixir cost vs available elixir
-- Prioritize defense if enemy is attacking
-- Look for counter-push opportunities
-- Consider card cycle and upcoming cards
-
-Analyze the screenshot and respond ONLY with valid JSON matching the format above."""
+        prompt = """You are an expert Clash Royale AI assistant. Analyze this game screenshot and recommend the optimal play."""
 
         return prompt
 

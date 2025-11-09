@@ -13,7 +13,7 @@ class ClashRoyaleAssistant:
         print("=" * 60)
 
         print("\n1. Initializing screenshot capture...")
-        self.screenshot = ScreenshotCapture(emulator_port=config.EMULATOR_PORT)
+        self.screenshot = ScreenshotCapture()
 
         print("\n2. Initializing AI client...")
         self.ai = ClashRoyaleAI()
@@ -102,7 +102,7 @@ def main():
         else:
 
             assistant.analyze_current_game()
-            print("\n✓ Analysis complete!")
+            print("\nAnalysis complete!")
             print("\nRun with --continuous for continuous mode")
 
     except Exception as e:
