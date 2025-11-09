@@ -1,9 +1,6 @@
 
-# Screenshot capture
-pure-python-adb==0.3.0.dev0
-
 # Image processing
-opencv-python==4.8.1.78
+opencv-python-headless>=4.10.0
 numpy>=1.24.0
 
 # AI Integration
@@ -11,3 +8,8 @@ openai>=1.0.0
 
 # Optional utilities
 python-dotenv==1.0.0
+
+# Windows-only dependencies (optional, for faster screenshots on native Windows)
+# Install with: pip install pywin32 pillow
+# pywin32>=306  # Uncomment for native Windows support
+# pillow>=10.0.0  # Uncomment for native Windows support
