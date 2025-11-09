@@ -1,0 +1,13 @@
+
+# Screenshot capture
+pure-python-adb==0.3.0.dev0
+
+# Image processing
+opencv-python==4.8.1.78
+numpy>=1.24.0
+
+# AI Integration
+openai>=1.0.0
+
+# Optional utilities
+python-dotenv==1.0.0

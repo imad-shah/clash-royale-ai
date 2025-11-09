@@ -1,0 +1,30 @@
+# API Keys and sensitive data
+config.py
+.env
+*.key
+
+# Screenshots and test data
+test_screenshot.png
+*.jpg
+*.jpeg
+*.png
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
